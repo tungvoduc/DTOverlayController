@@ -1,0 +1,6 @@
+framework module DTOverlayController {
+  umbrella header "DTOverlayController-umbrella.h"
+
+  export *
+  module * { export * }
+}

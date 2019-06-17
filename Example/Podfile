@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'DTOverlayController_Example' do
+  pod 'DTOverlayController', :path => '../'
+
+  target 'DTOverlayController_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
