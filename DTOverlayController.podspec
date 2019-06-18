@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'DTOverlayController'
-  s.version          = '0.1.0'
+  s.version          = '1.0.0'
   s.summary          = 'A fully customizable lay over view controller container, inspired by Facebook lay over controller.'
   s.swift_version    = '5.0'
 
