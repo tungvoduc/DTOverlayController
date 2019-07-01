@@ -9,11 +9,13 @@ import UIKit
 
 /// Represent height inside DTOverlayController
 ///
-/// - `static`: <#`static` description#>
-/// - dynamic: <#dynamic description#>
+/// - `static`: fixed height in point
+/// - dynamic: height ratio to parent controller. Must be between 0 and 1.
+/// - inset: fixed top inset from parent controller.
 public enum DTLayOverHeight {
     case `static`(CGFloat)
     case dynamic(CGFloat)
+    case inset(CGFloat)
 }
 
 ///
@@ -87,6 +89,8 @@ open class DTOverlayPresentationController: UIPresentationController {
             height = ratio * parentSize.height
         case let .static(fixedHeight):
             height = fixedHeight
+        case let .inset(topInset):
+            height = parentSize.height - topInset
         }
         
         return CGSize(width: parentSize.width, height: height)

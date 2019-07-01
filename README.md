@@ -38,6 +38,7 @@ overlayController.overlayViewCornerRadius = 10
 // Control the height of the view controller
 overlayController.overlayHeight = .dynamic(0.8) // 80% height of parent controller
 overlayController.overlayHeight = .static(300) // fixed 300-point height
+overlayController.overlayHeight = .inset(50) // fixed 50-point inset from top
 
 ```
 

@@ -74,6 +74,11 @@ class ExampleViewController: UITableViewController {
         
         switch selection {
         case .disabledPanGesture:
+            if #available(iOS 11.0, *) {
+                viewController.overlayHeight = .inset(50 + view.safeAreaInsets.top)
+            } else {
+                viewController.overlayHeight = .inset(50)
+            }
             viewController.isPanGestureEnabled = false
         default:
             break
