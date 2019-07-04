@@ -50,17 +50,29 @@ will be further developed and new features will be coming in next releases. Feel
 
 ## Installation
 
-DTOverlayController is available through [CocoaPods](https://cocoapods.org). To install
-it, simply add the following line to your Podfile:
+### CocoaPods
+Add the following line to your Podfile:
 
 ```ruby
 pod 'DTOverlayController'
 ```
 
+### Swift package manager
+`DTOverlayController` is available for SPM from version `1.0.2`.
+Add the following to the dependencies of your `Package.swift`:
+
+```swift
+.package(url: "https://github.com/tungvoduc/DTOverlayController", from: "1.0.x")
+```
+
 ## Author
 
-tungvoduc, tung98.dn@gmail.com
+Tung Vo, tung98.dn@gmail.com
 
 ## License
 
 DTOverlayController is available under the MIT license. See the LICENSE file for more info.
+
+## Feedbacks & requests
+- Open an issue if you find a bug, make a proposal or simply need some help.
+- You can also contact me via [email](mailto:tung98.dn@gmail.com).
