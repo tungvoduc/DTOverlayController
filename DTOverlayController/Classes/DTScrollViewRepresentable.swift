@@ -5,7 +5,7 @@
 //  Created by Tung Vo on 16.6.2019.
 //
 
-import Foundation
+import UIKit
 
 /**
 Define the root scroll view that can intefere with DTOverlayController's pan gesture.
